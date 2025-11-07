@@ -23,7 +23,7 @@ const App: React.FC = () => {
         />
 
         <PricingCard
-          title="Professional Logo Design"
+          title="Professional Plan"
           price="Rs 20,000"
           description="Perfect for growing organizations needing collaboration and advanced document security."
           features={[
@@ -38,7 +38,7 @@ const App: React.FC = () => {
         />
 
         <PricingCard
-          title="Premium Logo Design"
+          title="Premium Plan"
           price="RS 50,000"
           description="For enterprises requiring maximum security, integrations, and dedicated support."
 

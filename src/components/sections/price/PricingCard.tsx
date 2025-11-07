@@ -51,8 +51,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <button
         className={`w-full py-3 rounded-lg font-medium transition-all duration-300
           ${highlight 
-            ? "bg-blue-700 text-white hover:bg-green-700" 
-            : "bg-[#54b6f3] text-white hover:bg-green-700"}
+            ? "bg-blue-700 text-white hover:bg-[var(--color-primary-dark)] hover:text-white" 
+            : "bg-[#54b6f3] text-white hover:bg-[var(--color-primary-dark)] hover:text-white"}
         `}
       >
         Click here to get started!
