@@ -1,23 +1,18 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import Navbar from "../layouts/Navbar";
+import Footer from "../layouts/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 
 export const metadata: Metadata = {
   title: "EIPP VAULT",
-  description: "",
+  description: "Safeguarding Your Files, Simplifying Your Workflow.",
 };
-
 
 export default function RootLayout({
   children,
@@ -26,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${poppins.className} antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

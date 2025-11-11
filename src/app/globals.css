@@ -1,11 +1,8 @@
 @import "tailwindcss";
 
-/* @theme inline {
-   --color-primary : #006DB3,
-   --color-secondary: #98E5EA  
-} */
 
-:root {
+
+@theme inline {
   --color-primary: #4ea9e2; /* Deep Blue */
   --color-primary-dark: #1b357a; /* Darker Blue */
   --color-secondary: #E3F2FD; /* Accent Blue */
@@ -14,6 +11,4 @@
   --color-button:rgb(120, 233, 233);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+

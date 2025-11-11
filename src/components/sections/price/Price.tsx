@@ -1,59 +1,41 @@
-import React from "react";
+import React from "react"; 
 import PricingCard from "./PricingCard";
+import { pricingPlans } from "@/src/constant/data";
 
-
-
-const App: React.FC = () => {
+const Price: React.FC = () => {
   return (
-    <section id="pricing">
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
-        <PricingCard
-          title="Standard Plan"
-          price="Rs 4000"
-          description="Ideal for small teams looking to securely manage documents with essential features."
-          features={[
-            "Single user access",
-        "Up to 4GB storage",
-        "Basic version control",
-        "Email support",
-        "3-day setup time",
-          ]}
-          delivery="Est. 3 days of delivery"
-        />
-
-        <PricingCard
-          title="Professional Plan"
-          price="Rs 20,000"
-          description="Perfect for growing organizations needing collaboration and advanced document security."
-          features={[
-            "Up to 5 user accounts",
-        "20GB secure storage",
-        "Advanced version control",
-        "Priority support",
-        "7-day setup time",
-          ]}
-          delivery="Est. 7 days of delivery"
-          highlight
-        />
-
-        <PricingCard
-          title="Premium Plan"
-          price="RS 50,000"
-          description="For enterprises requiring maximum security, integrations, and dedicated support."
-
-          features={[
-            "Unlimited users",
-        "50GB cloud storage",
-        "Audit logs & analytics",
-        "Dedicated success manager",
-        "14-day setup time",
-          ]}
-          delivery="Est. 14 days of delivery"
-        />
+    <section id="pricing" className="w-full" >
+      <div className="bg-gray-100">
+      {/* Section Heading */}
+      <div className="text-center py-12">
+        <h2 className="text-3xl font-semibold text-primary-dark">
+          Choose the Plan that Fits Your Team
+        </h2>
+        <p className="text-gray-600 mt-2 ">
+          Simple pricing. No hidden fees. Scale as you grow.
+        </p>
       </div>
-    </div></section>
+
+      {/* Pricing Cards */}
+      <div className=" flex items-center justify-center p-8 pb-40">
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+          {pricingPlans.map((plan, index) => (
+            <PricingCard
+              key={index}
+              title={plan.title}
+              price={plan.price}
+              description={plan.description}
+              features={plan.features}
+              delivery={plan.delivery}
+              highlight={plan.highlight}
+            />
+          ))}
+        </div>
+      </div>
+      </div>
+
+    </section>
   );
 };
 
-export default App;
+export default Price;

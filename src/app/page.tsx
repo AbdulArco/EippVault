@@ -1,18 +1,15 @@
-import Footer from "../layouts/Footer";
-import Navbar from "../layouts/Navbar";
 import Hero from "../components/sections/hero/Hero";
-import App from "../components/sections/price/Price";
 import ContactUs from "../components/sections/contact/Contact";
+import About from "../components/sections/about/About";
+import Price from "../components/sections/price/Price";
 
 export default function HomePage() {
   return (
     <main>
-      <Navbar />
       <Hero />
-      <App/>
-      <ContactUs/>
-
-      <Footer />
+      <About />
+      <Price />
+      <ContactUs />
     </main>
   );
 }
