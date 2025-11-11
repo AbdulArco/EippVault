@@ -9,8 +9,6 @@ type tContactRequestBody = {
   message: string;
 };
 
-// name
-
 export async function POST(req: Request) {
   try {
     const data: tContactRequestBody = await req.json();
