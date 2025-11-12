@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
+  company: z.string().min(1, "Company name is required"),
   email: z
     .string()
     .min(1, "Email is required")
@@ -15,6 +16,7 @@ const contactSchema = z.object({
   phone: z
     .string()
     .trim()
+    .min(1, "Phone Number is required")
     .optional()
     .refine((val) => !val || val === "" || /^[0-9+\-\s()]{8,15}$/.test(val), {
       message: "Enter a valid phone number",

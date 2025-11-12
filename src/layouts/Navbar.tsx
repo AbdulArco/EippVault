@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { menus } from "../constant/NavLinks";
+import ContactUs from "../components/sections/contact/Contact";
 
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -14,7 +15,7 @@ export default function Navbar() {
       className="flex justify-between items-center px-8 py-3 bg-white  shadow-md sticky top-0 z-50"
     >
       <Link href="/" className="flex items-center space-x-2">
-        <Image src="/logo.png" alt="EIPP Vault Logo" width={50} height={50} />
+        <Image src="/logo.png" alt="EIPP Vault Logo" width={80} height={80} />
       </Link>
 
       <nav className="hidden md:flex space-x-8 text-sm font-medium relative">
@@ -49,10 +50,7 @@ export default function Navbar() {
       </nav>
 
       <div className="flex items-center space-x-4">
-        <button className="hover:text-primary transition-colors">
-          <Search size={20} />
-        </button>
-        <button className="bg-primary-dark text-sm px-4 py-1.5 rounded-md text-white font-medium transition-colors hover:bg-primary">
+        <button  onClick={() => document.getElementById("contact-us")?.scrollIntoView({ behavior: "smooth" })} className="bg-eipp-secondary text-sm px-4 py-1.5 rounded-md text-white font-medium transition-colors hover:bg-eipp-primary ">
           Request a demo
         </button>
       </div>

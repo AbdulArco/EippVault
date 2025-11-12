@@ -18,7 +18,7 @@ export default function ContactUs() {
       <div className="w-full flex justify-center py-14 bg-white">
         <div className="max-w-6xl w-full grid md:grid-cols-2 min-h-[650px]">
           <div className="px-14 py-10 flex flex-col justify-center">
-            <h1 className="text-[28px] font-semibold text-gray-900 leading-tight">
+            <h1 className="text-[28px] font-semibold text-eipp-primary leading-tight">
               Let’s level up your brand, <br /> together
             </h1>
 
@@ -74,6 +74,20 @@ export default function ContactUs() {
                 </div>
               </div>
 
+                               <div>
+  <label className="text-sm">Company Name *</label>
+  <input
+    {...register("company", { required: "Company name is required" })}
+    disabled={isPending}
+    className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[#66B2FF] transition-all disabled:opacity-50"
+  />
+  {errors.company && (
+    <p className="text-red-600 text-xs mt-1">
+      {errors.company.message}
+    </p>
+  )}
+</div>
+
               <div>
                 <label className="text-sm">Email *</label>
                 <input
@@ -121,7 +135,7 @@ export default function ContactUs() {
               <button
                 type="submit"
                 disabled={isPending}
-                className="w-full py-3 text-sm font-medium rounded-md bg-primary hover:bg-primary-dark text-white transition-all flex justify-center items-center gap-2 disabled:opacity-70"
+                className="w-full py-3 text-sm font-medium rounded-md bg-eipp-secondary hover:bg-eipp-primary text-white transition-all flex justify-center items-center gap-2 disabled:opacity-70"
               >
                 {isPending ? (
                   <>
@@ -135,13 +149,13 @@ export default function ContactUs() {
             </form>
           </div>
 
-          <div className="flex items-center justify-center ml-12 h-full w-full">
+          <div className="flex items-center justify-center ml-12 pl-2">
             <Image
               src="/hero.png"
-              width={600}
+              width={500}
               height={400}
               alt="Business"
-              className="w-full h-auto max-h-[600px] object-contain object-right"
+              className="w-full h-auto max-h-[600px] object-right"
             />
           </div>
         </div>

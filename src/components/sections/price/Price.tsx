@@ -8,7 +8,7 @@ const Price: React.FC = () => {
       <div className="bg-gray-100">
       {/* Section Heading */}
       <div className="text-center py-12">
-        <h2 className="text-3xl font-semibold text-primary-dark">
+        <h2 className="text-3xl font-semibold text-eipp-primary">
           Choose the Plan that Fits Your Team
         </h2>
         <p className="text-gray-600 mt-2 ">

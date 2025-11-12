@@ -2,13 +2,9 @@
 
 
 
-@theme inline {
-  --color-primary: #4ea9e2; /* Deep Blue */
-  --color-primary-dark: #1b357a; /* Darker Blue */
-  --color-secondary: #E3F2FD; /* Accent Blue */
-  --color-text: #1f2937; /* Gray-800 */
-  --color-bg: #ffffff; /* White */
-  --color-button:rgb(120, 233, 233);
-}
 
+@theme inline {
+  --color-eipp-primary: #1b357a;
+  --color-eipp-secondary: #4ea9e2; 
+}
 

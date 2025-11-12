@@ -9,7 +9,7 @@ export default function Footer() {
   const currentYear = useMemo(() => new Date().getFullYear(), []);
 
   return (
-    <footer className="bg-primary-dark text-white py-10 px-6">
+    <footer className="bg-eipp-primary  text-white py-10 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
         <div>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+          <h3 className="text-xl font-semibold mb-4 ">Follow Us</h3>
           <div className="flex space-x-4 text-2xl">
             <Link
               href="https://www.linkedin.com"
@@ -57,20 +57,6 @@ export default function Footer() {
               className="hover:text-green-200 transition"
             >
               <FaFacebook />
-            </Link>
-            <Link
-              href="https://www.twitter.com"
-              target="_blank"
-              className="hover:text-green-200 transition"
-            >
-              <FaTwitter />
-            </Link>
-            <Link
-              href="https://www.instagram.com"
-              target="_blank"
-              className="hover:text-green-200 transition"
-            >
-              <FaInstagram />
             </Link>
           </div>
         </div>

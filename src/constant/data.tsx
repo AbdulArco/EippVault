@@ -66,7 +66,7 @@ export const pricingPlans: tPricingPlan[] = [
       "Ideal for small teams looking to securely manage documents with essential features.",
     features: [
       "Single user access",
-      "Up to 4GB storage",
+      "Up to 5GB storage",
       "Basic version control",
       "Email support",
       "3-day setup time",

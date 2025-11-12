@@ -22,7 +22,7 @@ const PricingCard: React.FC<tPricingPlan> = ({
       <div
         className={`flex flex-col justify-between rounded-2xl shadow-lg p-8 cursor-pointer transition-all duration-300 hover:shadow-2xl ${
           highlight
-            ? "bg-gradient-to-l from-[var(--color-primary-dark)] to-[#A8E6F0] text-white scale-105"
+            ? "bg-gradient-to-l from-eipp-primary to-eipp-secondary text-white scale-105"
             : "bg-white text-gray-800"
         }`}
       >
@@ -58,8 +58,8 @@ const PricingCard: React.FC<tPricingPlan> = ({
           onClick={handlePayment}
           className={`w-full py-3 rounded-lg font-medium transition-all duration-300 ${
             highlight
-              ? "bg-blue-700 text-white hover:bg-[var(--color-primary-dark)]"
-              : "bg-[#54b6f3] text-white hover:bg-[var(--color-primary-dark)]"
+              ? "bg-eipp-secondary text-white hover:bg-eipp-primary"
+              : "bg-eipp-secondary text-white hover:bg-eipp-primary"
           }`}
         >
           Click here to get started!
@@ -127,7 +127,7 @@ const QRCodeDisplay = ({
   }
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <canvas ref={canvasRef} className="border border-gray-200 rounded-lg" />
       <div className="mt-4 text-center">
         <p className="text-sm font-semibold text-gray-700">UPI ID: {upiId}</p>
@@ -160,7 +160,7 @@ const PaymentModal: React.FC<{
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+      className="fixed inset-0 bg-gradient-to-br from-black/20 to-white/10 backdrop-blur-lg flex items-center justify-center z-50 p-4"
       onClick={handleOverlayClick}
     >
       <div className="bg-white rounded-2xl p-6 max-w-md w-full mx-auto">

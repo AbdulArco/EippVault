@@ -2,7 +2,7 @@ export default function About() {
   return (
     <main id="about" className="w-full bg-bg text-text leading-relaxed">
       <section className="max-w-5xl mx-auto px-6 py-10 text-lg">
-        <h1 className="text-3xl font-semibold  text-primary-dark mb-6">
+        <h1 className="text-3xl font-semibold  text-eipp-primary primary mb-6">
           About Us
         </h1>
         <p>
@@ -17,7 +17,7 @@ export default function About() {
 
       <section className="max-w-5xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-10">
         <div>
-          <h2 className="text-xl font-semibold  mb-3  text-primary-dark">
+          <h2 className="text-xl font-semibold  mb-3   text-eipp-primary">
             Who We Are
           </h2>
           <p>
@@ -32,7 +32,7 @@ export default function About() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-primary-dark mb-3">
+          <h2 className="text-xl font-semibold  text-eipp-primary mb-3">
             What We Do
           </h2>
           <ul className="list-disc ml-6 space-y-1">
@@ -49,7 +49,7 @@ export default function About() {
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-10">
-        <h2 className="text-xl font-semibold text-primary-dark mb-3">
+        <h2 className="text-xl font-semibold  text-eipp-primary mb-3">
           Industries We Support
         </h2>
         <ul className="list-disc ml-6 space-y-1">
@@ -67,7 +67,7 @@ export default function About() {
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-8">
-        <h2 className="text-xl font-semibold text-primary-dark mb-3">
+        <h2 className="text-xl font-semibold  text-eipp-primary mb-3">
           Our Mission
         </h2>
         <p>
@@ -75,7 +75,7 @@ export default function About() {
           into smart, secure, and seamless digital workflows.
         </p>
 
-        <h2 className="text-xl font-semibold text-primary-dark mt-8 mb-3">
+        <h2 className="text-xl font-semibold  text-eipp-primary mt-8 mb-3">
           Our Vision
         </h2>
         <p>
@@ -83,6 +83,7 @@ export default function About() {
           organized, and operate with confidence in a digital world.
         </p>
       </section>
+
     </main>
   );
 }

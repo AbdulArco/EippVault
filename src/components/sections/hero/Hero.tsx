@@ -1,10 +1,17 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-gradient-to-b from-primary-dark to-[#A8E6F0] text-white py-68 px-6 text-center relative overflow-hidden "
+      className="bg-gradient-to-l from-eipp-primary to-eipp-secondary text-white py-10 xl:py-48 px-6 text-center relative overflow-hidden "
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto justify-center items-center">
+        <Link href="/" className="flex items-center  justify-center pb-4">
+        <Image src="/logo.png" alt="EIPP Vault Logo" width={120} height={120} />
+      </Link>
+
         <h1 className="text-5xl md:text-6xl font-bold leading-20 mb-4 drop-shadow-lg pb-4">
           Safeguarding Your Files, Simplifying Your Workflow.
         </h1>
@@ -15,23 +22,16 @@ export default function Hero() {
         </p>
         {/* <p className="text-lg text-blue-50 mb-10 max-w-4xl mx-auto">Secure,Smart,Effortless Document Management.</p> */}
 
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 items-center">
           <a
             href="#contact-us"
-            className="bg-white text-[#0066B3] font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition"
+            className="bg-white text-eipp-secondary font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition"
           >
             Get In Touch
           </a>
-          <a
-            href="#contact-us"
-            className="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#0066B3] transition"
-          >
-            Get Started
-          </a>
+  
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#A8E6F0] to-transparent"></div>
     </section>
   );
 }

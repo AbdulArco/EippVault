@@ -41,4 +41,5 @@ export const menus = [
 
   { name: "Pricing", href: "/#pricing" },
   { name: "Contact Us", href: "/#contact-us" },
+  { name: "Certifications",href:"/#certifications"}
 ];
